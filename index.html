@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>H&H IT Solution</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0b0b0b, #1a1a1a, #2b2b2b);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 999;
+}
+
+nav img {
+    width: 45px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d9d9d9;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    animation: fadeIn 1.5s ease;
+}
+
+.logo {
+    width: 160px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    animation: float 4s ease-in-out infinite, glow 3s ease-in-out infinite;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+}
+
+.hero span {
+    color: #d9d9d9;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 50px;
+    background: linear-gradient(135deg, #d9d9d9, #bfc3c7);
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ffffff, #d9d9d9);
+    transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+    padding: 90px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    color: #d9d9d9;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 35px;
+    border-radius: 25px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card h3 {
+    color: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+/* COUNTRIES */
+.countries {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* PRICING */
+.price {
+    font-size: 2.2rem;
+    color: #d9d9d9;
+    margin: 15px 0;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: rgba(0,0,0,0.45);
+    border-radius: 30px;
+    padding: 70px 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.8);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 12px rgba(217,217,217,0.4); }
+    50% { box-shadow: 0 0 35px rgba(217,217,217,0.8); }
+    100% { box-shadow: 0 0 12px rgba(217,217,217,0.4); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <img src="hh-logo.png" alt="H&H Logo">
+    <div>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <img src="WhatsApp Image 2026-01-01 at 06.13.41.jpeg" class="logo" alt="H&H IT Solution">
+        <h1>H & H <span>IT Solution</span></h1>
+        <p>Premium IT & E-Commerce Support for Amazon & eBay Sellers</p>
+        <a href="https://www.tiktok.com/@hhitsolution" target="_blank" class="btn">
+            Connect on TikTok
+        </a>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="cards">
+    <div class="card">
+        <h3>IT Solutions</h3>
+        <p>Secure, scalable and modern IT services for online businesses.</p>
+    </div>
+    <div class="card">
+        <h3>Amazon & eBay</h3>
+        <p>Account recovery, store setup, listing optimization and support.</p>
+    </div>
+    <div class="card">
+        <h3>Global Clients</h3>
+        <p>Proudly serving sellers in the UK and USA.</p>
+    </div>
+</div>
+
+<div class="countries">
+    <div>🇬🇧 United Kingdom</div>
+    <div>🇺🇸 United States</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+<h2 class="section-title">What Clients Say</h2>
+<div class="cards">
+    <div class="card testimonial">
+        “H&H IT Solution resolved our Amazon issues quickly and professionally.”
+    </div>
+    <div class="card testimonial">
+        “Reliable service and excellent communication for eBay sellers.”
+    </div>
+    <div class="card testimonial">
+        “Trusted IT partner with real results.”
+    </div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+<h2 class="section-title">Simple Pricing</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Starter</h3>
+        <div class="price">$99</div>
+        <p>Basic IT & marketplace support</p>
+    </div>
+    <div class="card">
+        <h3>Business</h3>
+        <div class="price">$199</div>
+        <p>Complete Amazon & eBay assistance</p>
+    </div>
+    <div class="card">
+        <h3>Premium</h3>
+        <div class="price">$299</div>
+        <p>Full IT & e-commerce management</p>
+    </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="section-title">Let’s Work Together</h2>
+<p>Looking for a trusted IT & marketplace partner?</p>
+<a href="https://www.tiktok.com/@hhitsolution" target="_blank" class="btn">
+    Message Us on TikTok
+</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 H&H IT Solution • HTML & CSS Only <br>
+TikTok: <a href="https://www.tiktok.com/@hhitsolution">@hhitsolution</a>
+</footer>
+
+</body>
+</html>
